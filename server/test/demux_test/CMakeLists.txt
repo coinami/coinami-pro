@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 2.6)
+add_executable(demux_test.exe 
+	demux_test.cpp)
+include_directories("${PROJECT_BINARY_DIR}")
+include_directories("${PROJECT_BINARY_DIR}/include/demux")
+include_directories("${PROJECT_BINARY_DIR}/include/utility")
+include_directories("${PROJECT_BINARY_DIR}/lib/libstatgen/include")
+include_directories("${PROJECT_BINARY_DIR}/lib/cryptopp563")
+target_link_libraries(demux_test.exe ${PROJECT_BINARY_DIR}/src/demux/libDemux.a)
+target_link_libraries(demux_test.exe ${PROJECT_BINARY_DIR}/src/utility/libUtility.a)
+target_link_libraries(demux_test.exe ${PROJECT_BINARY_DIR}/lib/libstatgen/libStatGen.a)
+target_link_libraries(demux_test.exe ${PROJECT_BINARY_DIR}/lib/cryptopp563/libcryptopp.a)
+
+target_link_libraries(demux_test.exe z)
+target_link_libraries(demux_test.exe pq)

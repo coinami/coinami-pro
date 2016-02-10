@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="mineron">
+    <file>miner-off.png</file>
+    <file>miner-on.png</file>
+  </qresource>
+  <qresource prefix="windowIcon">
+    <file>coinami.png</file>
+  </qresource>
+</RCC>

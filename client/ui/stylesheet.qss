@@ -1,0 +1,13 @@
+QMainWindow {
+	background-color:#FFFFFF;
+}
+
+QTabWidget {
+	background-color:#FFFFFF;
+}
+
+QButton {
+	font: 10pt "Ubuntu";
+	color: rgb(0, 128, 0);
+	border-color: rgb(0, 192, 0);
+}
